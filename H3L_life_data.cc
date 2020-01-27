@@ -134,10 +134,10 @@ int main(int argc, char** argv){
   TApplication theApp("App", &argc, argv);
   gROOT->SetBatch(1);
   double xaxismin1 =  0.0;
-  double xaxismax1 =  6.5;
-  double xaxismin2 =  6.5;
+  double xaxismax1 =  7.0;
+  double xaxismin2 =  6.0;
   double xaxismax2 = 12.0;
-  double xaxismax3 =  12.5;
+  double xaxismax3 = 13.0;
   TH2F *h_frame = new TH2F("h_frame","h_frame",10,xaxismin1,xaxismax1,10,0,450.); //emul & bubble data
   SetTH2(h_frame , "", "", "{}^{3}_{#Lambda} H lifetime [ps]");
   
@@ -150,7 +150,7 @@ int main(int argc, char** argv){
   TH2F *h_frame3 = new TH2F("h_frame3","h_frame3",10,xaxismin2,xaxismax2,10,0,350.); //heavy ion data
   SetTH2(h_frame3 , "", "", "{}^{3}_{#Lambda} H lifetime [ps]");
   
-  TH2F *h_frame4 = new TH2F("h_frame4","h_frame4",10,xaxismin1,xaxismax2,10,0,450.); //all data + expected data
+  TH2F *h_frame4 = new TH2F("h_frame4","h_frame4",10,xaxismin1,xaxismax3,10,0,450.); //all data + expected data
   SetTH2(h_frame4 , "", "", "{}^{3}_{#Lambda} H lifetime [ps]");
 
   TGraphAsymmErrors *tg1, *tg2, *tg3;
@@ -318,18 +318,18 @@ int main(int argc, char** argv){
   tg4     -> Draw("sameP");
   tg5     -> Draw("sameP");
   tg6     -> Draw("sameP");
-  tg7     -> Draw("sameP");
-  tg8     -> Draw("sameP");
-  tg9     -> Draw("sameP");
-  tg10    -> Draw("sameP");
-  tg11    -> Draw("sameP");
-  tg12    -> Draw("sameP");
-  tg7_sys -> Draw("same[]5");
-  tg8_sys -> Draw("same[]5");
-  tg9_sys -> Draw("same[]5");
-  tg10_sys-> Draw("same[]5");
-  tg11_sys-> Draw("same[]5");
-  tg12_sys-> Draw("same[]5");
+  //tg7     -> Draw("sameP");
+  //tg8     -> Draw("sameP");
+  //tg9     -> Draw("sameP");
+  //tg10    -> Draw("sameP");
+  //tg11    -> Draw("sameP");
+  //tg12    -> Draw("sameP");
+  //tg7_sys -> Draw("same[]5");
+  //tg8_sys -> Draw("same[]5");
+  //tg9_sys -> Draw("same[]5");
+  //tg10_sys-> Draw("same[]5");
+  //tg11_sys-> Draw("same[]5");
+  //tg12_sys-> Draw("same[]5");
   leg_Lam -> Draw("same");
   
   c[1]->Clear();
@@ -380,7 +380,6 @@ int main(int argc, char** argv){
   
   c[3]->Clear();
   h_frame3-> Draw();
-  tg6      -> Draw("sameP");
   tg7      -> Draw("sameP");
   tg8      -> Draw("sameP");
   tg9      -> Draw("sameP");
@@ -392,10 +391,11 @@ int main(int argc, char** argv){
   tg10_sys -> Draw("same[]5");
   tg11_sys -> Draw("same[]5");
   Lam_life ->Draw("same");
-  Kama_line->Draw("same");
+  //Kama_line->Draw("same");
+  leg_Lam  ->Draw("same");
   
   c[4]->Clear();
-  h_frame4 -> Draw();
+  h_frame2 -> Draw();
   Ave_line ->Draw("same");
   Ave_line_up ->Draw("same");
   Ave_line_bt ->Draw("same");
