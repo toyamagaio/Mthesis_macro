@@ -186,7 +186,7 @@ int main(int argc, char** argv){
   2   G.Keyes,                 1968,PRL20(1968)819,      bubble chamber,     232,   45 ,        34 ,        ???  //should not be included??
   3  "P.E.Phillips, J.Schneps",1969,PR180(1969)1307,    emulsion,           285,   127,        105,        ???
   4  G.Bohm,                   1970,NPB16(1970)46-52,   emulsion,           128,   35 ,        26 ,        ???
-  5  G.Keyes,                  1970,PRD1(1970)66,       bubble chamber,     228,   46 ,        33 ,        ???
+  5  G.Keyes,                  1970,PRD1(1970)66,       bubble chamber,     264,   84 ,        52 ,        ??? 2-body only (lower limit 228 +46 -33)
   6  G.Keyes,                  1973,NPB67(1973)269,     bubble chamber,     246,   62 ,        41 ,        ???
   7  STAR,                     2010,Science328(2010)58 ,heavy-ion collision,182,   89 ,        45 ,        27
   8  C.Rappold(HypHI),         2013,NPA913(2013)170-184,heavy-ion collision,183,   42 ,        32 ,        37
@@ -207,7 +207,7 @@ int main(int argc, char** argv){
   double life2[1]={232}        ;double e_life2_high[1]={45 };  double e_life2_low[1]={34 }; double e_life2_sys[1]={0};
   double life3[1] ={285}       ;double e_life3_high[1]={127};  double e_life3_low[1]={105}; double e_life3_sys[1]={0};
   double life4[1] ={128}       ;double e_life4_high[1]={35 };  double e_life4_low[1]={26 }; double e_life4_sys[1]={0};
-  double life5[1] ={228}       ;double e_life5_high[1]={46 };  double e_life5_low[1]={33 }; double e_life5_sys[1]={0};
+  double life5[1] ={264}       ;double e_life5_high[1]={84 };  double e_life5_low[1]={52 }; double e_life5_sys[1]={0};
   double life6[1] ={246}       ;double e_life6_high[1]={62 };  double e_life6_low[1]={41 }; double e_life6_sys[1]={0};
   double life7[1] ={182}       ;double e_life7_high[1]={89 };  double e_life7_low[1]={45 }; double e_life7_sys[1]={27};
   double life8[1] ={183}       ;double e_life8_high[1]={42 };  double e_life8_low[1]={32 }; double e_life8_sys[1]={37};
